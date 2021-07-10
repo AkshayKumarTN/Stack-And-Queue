@@ -6,6 +6,7 @@ namespace StacksAndQueues
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*********************************************");
             Console.WriteLine(" Stack\n");
             Stack stack = new Stack();
             stack.Push(70);
@@ -19,6 +20,15 @@ namespace StacksAndQueues
             stack.Peek();
             stack.Pop();
             stack.Peek();
+
+            Console.WriteLine("*********************************************");
+            Console.WriteLine(" Queue\n");
+            Queue queue = new Queue();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
+            Console.WriteLine("*********************************************");
 
         }
     }
