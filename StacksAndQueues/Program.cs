@@ -16,10 +16,8 @@ namespace StacksAndQueues
             stack.Peek();
             stack.Pop();
             stack.Peek();
-            stack.Pop();
-            stack.Peek();
-            stack.Pop();
-            stack.Peek();
+            stack.Display();
+
 
             Console.WriteLine("*********************************************");
             Console.WriteLine(" Queue\n");
@@ -27,6 +25,10 @@ namespace StacksAndQueues
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
+            Console.WriteLine(" Before Dequeue");
+            queue.Display();
+            queue.Dequeue();
+            Console.WriteLine(" After Dequeue");
             queue.Display();
             Console.WriteLine("*********************************************");
 
