@@ -25,15 +25,7 @@ namespace StacksAndQueues
                 temp.Next = node;
             }
         }
-        public void Dequeue()
-        {
-            // Delete At First in the Queue....
-            if (head == null)
-                Console.WriteLine(" Queue is Empty ");
-            else
-                head = head.Next;
-
-        }
+        
         public void Display()
         {
             // Displaying Queue....
